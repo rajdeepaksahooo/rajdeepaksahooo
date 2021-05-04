@@ -1,0 +1,61 @@
+body{
+    background-image: url('/Practice/pexels-pixabay-531880.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+form{
+    margin-top: 12%;
+    margin-left: 35%;
+}
+#btn{
+    margin-top: 2%;
+    margin-left: 15%;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #226330;
+    color: white;
+}
+#btn:hover{
+    background-color: #05801f;
+}
+input{
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+}
+label{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+select{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+#m{
+    height: 30px;
+    width: 267px;
+    border-radius: 10px;
+}
+#popup{
+    margin-top: 3%;
+    margin-left: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 20%;
+    padding: 25px;
+    border-radius: 25px;
+    
+}
+#popup div{
+    margin-left: 25%;
+}
