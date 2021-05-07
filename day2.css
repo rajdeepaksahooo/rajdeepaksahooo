@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#response{
+  
+    width: 35%;
+    display: inline-block;
+    align-self: center;
+    margin-left: 28%;
+}
+#cmtplace{
+    width: 30%;
+    right: 2%;
+    display: inline-block;
+    position: fixed;
+}
+#submit{
+    width: 80%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-left: 18%;
+}
+input{
+    margin-top :15px;
+    margin-bottom: 10px;
+}
+#title ,#body {
+    width: 120%;
+    height: 30px;
+    border-radius: 10px;
+}
+#fetchUserDataBtn{
+    width: 80%;
+    margin-left: 18%;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+#form{
+    position: fixed;
+    width: 20%;
+    margin-right: 2%;
+   
+}
+#t,#b{
+    margin-top :15px;
+    margin-bottom: 10px;
+    width: 120%;
+    height: 30px;
+    border-radius: 10px;
+}
