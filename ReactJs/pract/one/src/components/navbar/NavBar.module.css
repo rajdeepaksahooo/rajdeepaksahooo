@@ -1,0 +1,17 @@
+.main{
+    background-image: url('../items/bg-10.jpeg');
+
+    height: 240px;
+}
+a{
+    padding: 10px;
+    font-size: 20px;
+    font-style: bold;
+    text-decoration: none;
+}
+.a{
+    margin-left: 80px;
+}
+.nav{
+    margin-right: 200px;
+}

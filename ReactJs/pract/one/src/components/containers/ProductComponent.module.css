@@ -1,0 +1,23 @@
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: start;
+
+
+}
+.item{
+    margin: px;
+    justify-content: start;
+}
+.one{
+    border: 1px solid gray;
+    width: 250px;
+    height: 120px;
+    padding-top: 20px;
+    background-color: white;
+}
+.single{
+    padding: 10px;
+}

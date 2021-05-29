@@ -1,0 +1,9 @@
+.div{
+    margin-top:-60px;
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}

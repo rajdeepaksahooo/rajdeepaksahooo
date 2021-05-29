@@ -1,0 +1,24 @@
+.bg{
+    background-image: url('../items/bg-10.jpeg');
+    height: 250px;
+}
+.a{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+a:hover{
+    color: white;
+    
+}
+.container{
+    width: 40%;
+    height: 40px;
+    padding-top: 10px;
+}
+.first{
+    margin-left: -50px;
+    padding-right: 20px;
+}
