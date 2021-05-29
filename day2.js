@@ -117,6 +117,9 @@ TITLE:${user.title}<br>
 <button onclick="getdatabyid(${user.id})">Comments</button>
 <button onclick="updatedatabyid(${user.id})">Update</button>
 <button onclick="deletedatabyid(${user.id})">Delete</button><br>
+<button onclick="albumsdatabyid(${user.id})">Albums</button>
+<button onclick="photosdatabyid(${user.id})">Photos</button>
+<br>
 
 
 </li>
@@ -128,6 +131,91 @@ TITLE:${user.title}<br>
         });
 
 }
+
+todosdatabyid=(id)=>{
+    fetch('https://jsonplaceholder.typicode.com/posts/'+id+'/photos')
+    .then(response => response.json())
+
+    .then(todos=> {
+        console.log(todos)
+        let output = '<h2>Lists of Todos</h2>';
+        output += '<ul>';
+        todos.forEach(function (user) {
+            if (user.userId == id) {
+                output += `
+
+                <li>
+                USERID-${user.userId}<br>
+                ID-${user.id}<br>
+                TITLE-${user.title}<br>
+                COMPLETED-${user.completed}<br>
+                </li>
+                `;
+            }
+        });
+        output += '</ul>'
+        document.getElementById("cmtplace").innerHTML = output;
+    });
+}
+
+
+
+photosdatabyid=(id)=>{
+    fetch('https://jsonplaceholder.typicode.com/posts/'+id+'/photos')
+    .then(response => response.json())
+
+    .then(photos=> {
+        console.log(photos)
+        let output = '<h2>Lists of Photos</h2>';
+        output += '<ul>';
+        photos.forEach(function (user) {
+            if (user.albumId == id) {
+                output += `
+
+                <li>
+                USERID-${user.albumId}<br>
+                ID-${user.id}<br>
+                TITLE-${user.title}<br>
+                URL-${user.url}<br>
+                THUMBNAIL URL-${user.thumbnailUrl}<br>
+                </li>
+                `;
+            }
+        });
+        output += '</ul>'
+        document.getElementById("cmtplace").innerHTML = output;
+    });
+}
+
+
+albumsdatabyid=(id)=>{
+    fetch('https://jsonplaceholder.typicode.com/posts/'+id+'/albums')
+    .then(response => response.json())
+
+    .then(album=> {
+        console.log(album)
+        let output = '<h2>Lists of Albums</h2>';
+        output += '<ul>';
+        album.forEach(function (user) {
+            if (user.userId == id) {
+                output += `
+
+                <li>
+                USERID:${user.userId}<br>
+                ID-${user.id}<br>
+                TITLE-${user.title}<br>
+                </li>
+                `;
+            }
+        });
+        output += '</ul>'
+        document.getElementById("cmtplace").innerHTML = output;
+    });
+}
+
+
+
+
 
 function getdatabyid(id) {
 
@@ -142,14 +230,14 @@ function getdatabyid(id) {
                 if (user.postId == id) {
                     output += `
 
-<li>
-USERID:${user.postId}<br>
-ID-${user.id}<br>
-NAME-${user.name}<br>
-EMAIL-${user.email}<br>
-BODY:${user.body}<br>
-</li>
-`;
+                    <li>
+                    USERID:${user.postId}<br>
+                    ID-${user.id}<br>
+                    NAME-${user.name}<br>
+                    EMAIL-${user.email}<br>
+                    BODY:${user.body}<br>
+                    </li>
+                    `;
                 }
             });
             output += '</ul>'
